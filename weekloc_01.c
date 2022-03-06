@@ -8,9 +8,14 @@ int main()
     printf("/n enter the seocond string:");
     gets(str2);
     char str[100];
-    str=strcat(str1,str2);
-   
+    strcat(str1,str2);
+    int l=strlen(str1);
+   for(int i=l-1;i>=0;i--)
+   {   char ch=str1[i];
+       strncat(str,&ch,1);
+   }
    puts(str);
+   /*for(int i=l-1;i<=0)
 
-  return 0;
+  return 0;*/
 }
