@@ -2,20 +2,15 @@
 int main()
 {  
    printf("enter the number:\n");
-   int arr[10];int odd;int even;
-   for (int i=0;i<10;i++)
+   int odd=0;int even=0;int num;
+  
+   for(int i=1;i<=10;i++)
    {
-      scanf("%d",&arr[i]);
-   }
-   for(int i=0;i<10;i++)
-   {
-      if(arr[i]%2==0)
-      {
-          even=even+arr[i];
-      }
-      else{
-          odd=odd+arr[i];
-      }
+       scanf("%d",&num);
+       if(num%2==0)
+       {even=even+num;}
+       else{odd=odd+num;}
+      
    }
    printf("even sum:%d\n",even);
    printf("odd sum:%d\n",odd);
